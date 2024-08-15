@@ -1,0 +1,8 @@
+services:
+  sqldef-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
+    volumes:
+      - .:/app:cached
