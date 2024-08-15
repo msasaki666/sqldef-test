@@ -1,6 +1,7 @@
 create table users (
     id serial primary key,
     username text not null unique,
+    nickname text,
     password text not null
 );
 
